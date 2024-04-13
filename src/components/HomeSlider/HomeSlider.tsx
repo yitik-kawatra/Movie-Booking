@@ -10,8 +10,8 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import Image from 'next/image';
 
-const width = window.innerWidth;
-const height = window.innerHeight;
+const width = window?.innerWidth;
+const height = window?.innerHeight;
 const HomeSlider = () => {
 
     const [banners, setBanners] = useState([
