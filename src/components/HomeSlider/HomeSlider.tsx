@@ -47,7 +47,7 @@ const HomeSlider = () => {
                 banners.map((banner, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <Image src={banner.imgUrl} alt="" width={width} height={height / 2}
+                            <Image className='w-full' src={banner.imgUrl} alt=""
                                 style={{
                                     objectFit: "cover"
                                 }} />
