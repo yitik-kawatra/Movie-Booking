@@ -11,13 +11,10 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import Image from 'next/image';
 
-let width: number;
-let height: number;
+const width = globalThis.window.innerWidth;
+const height = globalThis.window.innerHeight
 
-if (typeof window !== 'undefined') {
-    width = window?.innerWidth;
-    height = window?.innerHeight;
-}
+
 const HomeSlider = () => {
 
     const [banners, setBanners] = useState([
