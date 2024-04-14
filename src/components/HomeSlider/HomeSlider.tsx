@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,8 +11,13 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import Image from 'next/image';
 
-const width = window?.innerWidth;
-const height = window?.innerHeight;
+let width: number;
+let height: number;
+
+if (typeof window !== 'undefined') {
+    width = window?.innerWidth;
+    height = window?.innerHeight;
+}
 const HomeSlider = () => {
 
     const [banners, setBanners] = useState([
