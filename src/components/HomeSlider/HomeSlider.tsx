@@ -49,7 +49,8 @@ const HomeSlider = () => {
                         <SwiperSlide key={index}>
                             <Image className='w-full' src={banner.imgUrl} alt=""
                                 style={{
-                                    objectFit: "cover"
+                                    objectFit: "cover",
+                                    width: "100%"
                                 }} />
                         </SwiperSlide>
                     )
