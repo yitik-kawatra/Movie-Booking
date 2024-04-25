@@ -86,6 +86,7 @@ const BuyTicketsPage  = () => {
     }, [])
 
     React.useEffect(() => {
+        console.log("selectedDate",selectedDate)
         getTheatres(selectedDate)
     }, [selectedDate])
 
